@@ -1,12 +1,15 @@
-# Hi, I'm Hryhorii Klymenko 👋
+# Hryhorii Klymenko 🌐
 
 **Full-Stack & AI Developer** building practical web, AI/ML and Web3 products.
 
 [LinkedIn](https://www.linkedin.com/in/hryhorii-klymenko/) · [Devpost](https://devpost.com/GKL1) · [X](https://x.com/HKL1ne)
 
-## Focus
+## Snapshot
 
-React · TypeScript · Python · FastAPI · Machine Learning · Web3 · TON
+- **Building** — TON Tracker
+- **Focus** — applied AI/ML, Web3 and reliable product design
+- **Stack** — React, TypeScript, Python, FastAPI
+- **Based in** — Veneto, Italy
 
 ## Featured work
 
