@@ -8,13 +8,40 @@
 
 React · TypeScript · Python · FastAPI · Machine Learning · Web3 · TON
 
-## Featured projects
+## Featured work
 
-- [**TON Tracker**](https://github.com/Gr1gorii/ton-tracker) — an evidence-first wallet intelligence workspace for the TON ecosystem. **Currently in development.**
-- [**HeatRelay**](https://github.com/Gr1gorii/HeatRelay) — an AI-assisted heat-safety action-planning prototype built during OpenAI Build Week.
-- [**Customer Risk Scoring**](https://github.com/Gr1gorii/customer-risk-scoring) — a machine-learning project for customer risk assessment.
-- [**House Price Prediction**](https://github.com/Gr1gorii/house-price-prediction) — a machine-learning project for predicting housing prices.
-- [**Weather App**](https://github.com/Gr1gorii/weather-app) — a responsive weather application built with TypeScript.
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### TON Tracker
+
+Evidence-first wallet intelligence for the TON ecosystem.
+
+React · TypeScript · Python · FastAPI
+
+[View repository →](https://github.com/Gr1gorii/ton-tracker)
+
+<sub>Currently in development.</sub>
+
+</td>
+<td width="50%" valign="top">
+
+### HeatRelay
+
+AI-assisted heat-safety action planning, built during OpenAI Build Week.
+
+React · TypeScript · FastAPI · AI
+
+[View repository →](https://github.com/Gr1gorii/HeatRelay) · [Demo →](https://www.youtube.com/watch?v=rD4rdpmmFr8)
+
+<sub>A five-day prototype with clear safety boundaries.</sub>
+
+</td>
+</tr>
+</table>
+
+**Also:** [Customer Risk Scoring](https://github.com/Gr1gorii/customer-risk-scoring) · [House Price Prediction](https://github.com/Gr1gorii/house-price-prediction) · [Weather App](https://github.com/Gr1gorii/weather-app)
 
 ## Currently
 
