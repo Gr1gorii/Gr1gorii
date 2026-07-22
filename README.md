@@ -9,7 +9,6 @@
 - **Building** — TON Tracker
 - **Focus** — applied AI/ML, Web3 and reliable product design
 - **Stack** — React, TypeScript, Python, FastAPI
-- **Based in** — Veneto, Italy
 
 ## Featured work
 
