@@ -77,4 +77,4 @@ Python · FastAPI · BM25 · Ollama
 
 ## Ambito dei progetti
 
-Sono progetti di portfolio e apprendimento. I progetti sugli acquisti ripetuti e RAG sono stati sviluppati con assistenza AI. Nei repository sono disponibili riferimenti alle fonti, codice eseguibile, controlli e limiti.
+Sono progetti di portfolio e apprendimento. Nei repository sono disponibili riferimenti alle fonti, codice eseguibile, controlli e limiti.
