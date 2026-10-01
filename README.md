@@ -77,4 +77,4 @@ Python · FastAPI · BM25 · Ollama
 
 ## Project scope
 
-These are portfolio and learning projects. The repeat-purchase and RAG projects were developed with AI assistance. Source references, runnable code, checks and limitations are available in the repositories.
+These are portfolio and learning projects. Source references, runnable code, checks and limitations are available in the repositories.
