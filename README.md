@@ -6,7 +6,7 @@
 
 MSc in Computer Science. I build analyses that end in a business decision: what to stock, whom to contact, what a customer is worth and whether a discount is real. Python and SQL, with time-based validation and confidence intervals rather than single-number claims.
 
-Open to junior data roles in Italy and remote (EU).
+Open to junior data roles in Italy and remote (EU). Fully authorised to work in Italy; no visa or relocation assistance required.
 
 [LinkedIn](https://www.linkedin.com/in/hryhorii-klymenko/) · [Devpost](https://devpost.com/GKL1) · [X](https://x.com/HKL1ne)
 

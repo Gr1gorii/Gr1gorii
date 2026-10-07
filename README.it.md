@@ -6,7 +6,7 @@
 
 MSc in Informatica. Costruisco analisi che portano a una decisione di business: quanto riordinare, chi contattare, quanto vale un cliente e se uno sconto è reale. Python e SQL, con validazione temporale e intervalli di confidenza invece di un singolo numero.
 
-Disponibile per ruoli junior nei dati in Italia e da remoto (UE).
+Disponibile per ruoli junior nei dati in Italia e da remoto (UE). Autorizzato a lavorare in Italia, senza necessità di visto né di supporto per il trasferimento.
 
 [LinkedIn](https://www.linkedin.com/in/hryhorii-klymenko/) · [Devpost](https://devpost.com/GKL1) · [X](https://x.com/HKL1ne)
 
