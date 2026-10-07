@@ -2,79 +2,111 @@
 
 # Hryhorii Klymenko
 
-**Junior Data / AI · Python & SQL**
+**Data Analyst / Junior Data Scientist · Retail, e-commerce & hospitality analytics**
 
-I'm focused on data analysis and applied AI: turning raw data into clear findings, dashboards and carefully evaluated prototypes. Open to junior opportunities in data analytics and applied AI.
+MSc in Computer Science. I build analyses that end in a business decision: what to stock, whom to contact, what a customer is worth and whether a discount is real. Python and SQL, with time-based validation and confidence intervals rather than single-number claims.
+
+Open to junior data roles in Italy and remote (EU).
 
 [LinkedIn](https://www.linkedin.com/in/hryhorii-klymenko/) · [Devpost](https://devpost.com/GKL1) · [X](https://x.com/HKL1ne)
 
+## Currently building
+
+### [Are Black Friday discounts real? Italy 2026](https://github.com/Gr1gorii/price-tracker)
+
+Under the EU Omnibus directive, an announced discount must be calculated from the lowest price of the previous 30 days. I track **~1,800 products in 5 Italian online shops twice a day** to test whether Black Friday discounts (27 Nov 2026) follow that rule.
+
+- Scheduled collector: robots.txt-aware, rate-limited, Parquet + DuckDB storage, twice-daily runs
+- Compliance checker: true 30-day low, claimed vs honest discount, flags for inflated reference prices and price increases just before a discount
+- **Results: early December 2026**
+
+Python · httpx · DuckDB · pandas · GitHub Actions · pytest
+
 ## Selected projects
 
-### 1. [Hotel Booking Analytics](https://github.com/Gr1gorii/hotel-booking-analytics)
+### 1. [Retail Demand Planner](https://github.com/Gr1gorii/retail-demand-planner)
 
-**How do booking patterns and cancellations vary across hotels and channels?**
+**Which forecast gives a grocery store the cheapest weekly replenishment?**
 
-Python · pandas · SQLite · scikit-learn · Streamlit
+- Daily forecasts for **1,437 food items** (Walmart M5) across four chronological windows: LightGBM vs seasonal naive and a 28-day moving average
+- Forecasts turned into a weekly order policy with a two-day lead time and safety stock calibrated on validation data only
+- **Result:** LightGBM has the lowest simulated inventory cost, **20.8% below seasonal naive**, and is the cheapest in all four windows and all nine cost scenarios
 
-- Analysis of **119,390 historical bookings**, with reproducible data preparation, SQL summaries and an interactive dashboard
-- Time-ordered ML evaluation, feature-availability checks, baseline comparisons and error analysis
-- **Finding:** 41.7% of bookings were canceled at the city hotel, compared with 27.8% at the resort. These are observed differences, not causal effects
-- The cancellation model stays an **offline experiment**: its small ranking improvement comes with many false alarms
+Python · LightGBM · pandas · Streamlit (EN/IT)
 
-[Repository & local demo](https://github.com/Gr1gorii/hotel-booking-analytics) · [Business findings](https://github.com/Gr1gorii/hotel-booking-analytics/blob/main/reports/management_brief.md) · [Model evaluation](https://github.com/Gr1gorii/hotel-booking-analytics/blob/main/reports/model_results.md)
-
-<a href="https://github.com/Gr1gorii/hotel-booking-analytics">
-  <img src="https://raw.githubusercontent.com/Gr1gorii/hotel-booking-analytics/main/docs/images/overview.jpg" alt="Hotel dashboard showing booking totals, cancellation rates and monthly trends" width="760">
+<a href="https://github.com/Gr1gorii/retail-demand-planner">
+  <img src="https://raw.githubusercontent.com/Gr1gorii/retail-demand-planner/main/assets/en/overview.png" alt="Simulated inventory cost by forecasting method and savings by window" width="760">
 </a>
 
-### 2. [Customer Repeat Purchase Analysis](https://github.com/Gr1gorii/customer-repeat-purchase-analysis)
+### 2. [Email Campaign Uplift](https://github.com/Gr1gorii/discount-uplift)
 
-**Which customers buy again, and how does purchase activity change by cohort?**
+**Is it more profitable to email only the customers the campaign actually persuades?**
 
-Python · SQL · DuckDB · pandas
+- Randomized Hillstrom email experiment, **42,613 customers**: email lifts conversion by **0.68 pp** (95% CI 0.50–0.86)
+- Uplift model, incremental profit by targeting policy, bootstrap intervals and sensitivity to contact cost and coupon size
+- **Result:** targeting the top 30% is not significantly more profitable than mailing everyone (−$66 per 10,000 customers, 95% CI −$989 to $804), so I recommend a new randomized pilot before rollout
 
-- Pipeline for **541,909 UCI Online Retail source lines**, with documented quality rules and SQL results reconciled against pandas
-- Cohort analysis and 30/60/90-day repeat-purchase windows with complete-observation denominators
-- **Finding:** 907 of 4,070 eligible customers (**22.3%**) bought on another invoice within 30 days. This is historical purchase activity, not measured business uplift
-
-[Repository & local demo](https://github.com/Gr1gorii/customer-repeat-purchase-analysis) · [Findings](https://github.com/Gr1gorii/customer-repeat-purchase-analysis/blob/main/reports/management_summary.md) · [Repeat-purchase SQL](https://github.com/Gr1gorii/customer-repeat-purchase-analysis/blob/main/sql/02_repeat.sql)
+Python · scikit-learn · bootstrap · Streamlit (EN/IT)
 
 <details>
-<summary>Preview the cohort chart</summary>
+<summary>Preview: profit by targeting policy</summary>
 
-![Actual customer cohort activity chart; grey cells mark incomplete observation](https://raw.githubusercontent.com/Gr1gorii/customer-repeat-purchase-analysis/main/reports/cohort-activity.png)
+![Incremental profit and bootstrap intervals by targeting policy](https://raw.githubusercontent.com/Gr1gorii/discount-uplift/main/reports/policy_profit.png)
 
 </details>
 
-### 3. [Document Search RAG](https://github.com/Gr1gorii/document-search-rag)
+### 3. [Customer Lifetime Value & Segmentation](https://github.com/Gr1gorii/ecommerce-clv-segmentation)
 
-**Can a local assistant answer questions about documentation and make its sources easy to inspect?**
+**What is each customer worth over the next year, and what should we do with each segment?**
+
+- BG/NBD + Gamma-Gamma model on UK transactions from Online Retail II, backtested on three time windows against two baselines
+- The model beats both baselines on top-10% and top-20% revenue capture in all three windows; I use it to rank customers, not to forecast exact revenue
+- **Result:** CAC reference ranges and an action for each segment, including a costed reactivation test for 104 high-value dormant customers
+
+Python · lifetimes · pandas · Streamlit (EN/IT)
+
+<details>
+<summary>Preview: portfolio dashboard</summary>
+
+![Streamlit dashboard with segment contribution and customer value distribution](https://raw.githubusercontent.com/Gr1gorii/ecommerce-clv-segmentation/main/reports/figures/en/dashboard.jpg)
+
+</details>
+
+### 4. [Hotel Booking Analytics](https://github.com/Gr1gorii/hotel-booking-analytics)
+
+**Where do hotel cancellations come from, and can late ones be predicted?**
+
+- **119,390 bookings** analysed with SQL views, an interactive dashboard and a management brief
+- **Finding:** 41.7% of bookings canceled at the city hotel vs 27.8% at the resort; the cancellation rate is 57.0% for bookings made more than 180 days ahead vs 9.6% at 0–7 days
+- Late-cancellation model with time-based validation and a feature-leakage audit; kept offline because its small gain comes with many false alarms
+
+Python · SQL (SQLite) · scikit-learn · Streamlit
+
+<details>
+<summary>Preview: booking dashboard</summary>
+
+![Hotel dashboard with booking totals, cancellation rates and monthly trends](https://raw.githubusercontent.com/Gr1gorii/hotel-booking-analytics/main/docs/images/overview.jpg)
+
+</details>
+
+### 5. [Document Search RAG](https://github.com/Gr1gorii/document-search-rag)
+
+**Can a small local model answer documentation questions with sources you can check?**
+
+- Local RAG (BM25 + Ollama) over 12 FastAPI documentation pages, with citations and abstention when evidence is missing
+- Expected page among the top four results for 45/45 answerable questions; abstained on 15/15 out-of-scope questions; failure cases documented
 
 Python · FastAPI · BM25 · Ollama
 
-- Search and local RAG over **12 FastAPI documentation pages**, with source excerpts, citation links and abstention
-- Search-only fallback when the local model is unavailable; no paid API required
-- Published checks for retrieval, citations, abstention and latency, including failure cases. Keyword matches and valid citation IDs **do not establish factual accuracy**
+## Skills
 
-[Repository & local demo](https://github.com/Gr1gorii/document-search-rag) · [Evaluation & limitations](https://github.com/Gr1gorii/document-search-rag/blob/main/reports/QUALITY.md)
-
-<details>
-<summary>Preview an answer and its source</summary>
-
-![Actual local RAG answer with the cited FastAPI source excerpt expanded](https://raw.githubusercontent.com/Gr1gorii/document-search-rag/main/reports/ui-answer.png)
-
-</details>
-
-## Tools used in these projects
-
-**Data:** Python, SQL, pandas, DuckDB, SQLite  
-**ML & AI:** scikit-learn, model evaluation, BM25 retrieval, Ollama  
-**Delivery:** Streamlit, FastAPI, Git, pytest, reproducible local workflows
+**Analytics:** Python, pandas, SQL (DuckDB, SQLite), Streamlit dashboards  
+**Statistics & ML:** A/B tests and uplift, bootstrap intervals, demand forecasting (LightGBM), CLV models, scikit-learn, time-based validation  
+**Data engineering:** web data collection, Parquet, scheduled pipelines (GitHub Actions), pytest  
+**AI:** local RAG and evaluation of model answers
 
 ## More projects
 
-[TON Tracker](https://github.com/Gr1gorii/ton-tracker) · [HeatRelay](https://github.com/Gr1gorii/HeatRelay) · [All repositories](https://github.com/Gr1gorii?tab=repositories)
+[Customer Repeat Purchase Analysis](https://github.com/Gr1gorii/customer-repeat-purchase-analysis) · [Processing Efficiency Study](https://github.com/Gr1gorii/processing-efficiency-study) · [TON Tracker](https://github.com/Gr1gorii/ton-tracker) · [HeatRelay](https://github.com/Gr1gorii/HeatRelay) · [All repositories](https://github.com/Gr1gorii?tab=repositories)
 
-## Project scope
-
-These are portfolio and learning projects. Source references, runnable code, checks and limitations are available in the repositories.
+Portfolio projects on public data. Each repository documents its sources, checks and limitations.
