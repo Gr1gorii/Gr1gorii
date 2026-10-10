@@ -110,3 +110,14 @@ Python · FastAPI · BM25 · Ollama
 [Customer Repeat Purchase Analysis](https://github.com/Gr1gorii/customer-repeat-purchase-analysis) · [Processing Efficiency Study](https://github.com/Gr1gorii/processing-efficiency-study) · [TON Tracker](https://github.com/Gr1gorii/ton-tracker) · [HeatRelay](https://github.com/Gr1gorii/HeatRelay) · [All repositories](https://github.com/Gr1gorii?tab=repositories)
 
 Portfolio projects on public data. Each repository documents its sources, checks and limitations.
+
+## Project code license
+
+Copyright (c) 2026 Gr1gorii.
+
+The original project code authored by Gr1gorii is licensed under the
+GNU General Public License version 3 only (`GPL-3.0-only`).
+See [LICENSE](LICENSE) for the full terms.
+
+Third-party code, datasets, and materials retain their respective licenses
+and attribution requirements. This license does not replace those terms.
