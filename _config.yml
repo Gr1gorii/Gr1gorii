@@ -1,0 +1,18 @@
+title: "Hryhorii Klymenko"
+url: "https://gr1gorii.github.io"
+baseurl: "/Gr1gorii"
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+exclude:
+  - node_modules
+  - vendor
+  - tests
+  - Tests
+  - .venv

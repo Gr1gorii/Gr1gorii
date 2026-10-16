@@ -1,5 +1,7 @@
 [English](README.md) | [Italiano](README.it.md)
 
+Project website: [Gr1gorii](https://gr1gorii.github.io/Gr1gorii/)
+
 # Hryhorii Klymenko
 
 **Data Analyst / Junior Data Scientist · Retail, e-commerce & hospitality analytics**
